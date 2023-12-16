@@ -37,6 +37,6 @@ public function store(Request $request) {
     $post->content = $request->input('content');
     $post->save();
 
-    return redirect("/posts/{$post->id}");
+    return redirect("/posts");
 }
 }
